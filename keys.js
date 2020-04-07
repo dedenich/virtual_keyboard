@@ -82,9 +82,6 @@ const keys = [
   },
   {
     ru: ['\\', '/'], en: ['\\', '|'], class: 'keyboard__key', code: 'Backlash',
-  },
-  {
-    ru: ['\\', '/'], en: ['\\', '|'], class: 'keyboard__key', code: 'Backlash',
   }],
   [{
     ru: ['CapsLock', 'CapsLock'], en: ['CapsLock', 'CapsLock'], class: 'keyboard__key-wide', code: 'CapsLock',
