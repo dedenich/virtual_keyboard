@@ -15,6 +15,8 @@ const keyboard = document.createElement('div');
 keyboard.classList.add('keyboard');
 divWrapper.appendChild(keyboard);
 
+localStorage.setItem('lang', 'en');
+
 function createButton(n, rule) {
   const btn = document.createElement('div');
   btn.classList.add(n.class);
@@ -116,8 +118,7 @@ function inputShift(e) {
   let char;
   if (localStorage.getItem('lang') === 'ru' || localStorage.getItem('lang') === 'null') {
     char = elem.ru[1];
-  }
-  else char = elem.en[1];
+  } else char = elem.en[1];
   textareaAdd(char);
   if (char === 'ControlLeft') {
     switch (localStorage.lang) {
